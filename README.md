@@ -4,7 +4,7 @@
 
 HTML,CSS,BOOTSTRAP, JAVSCRIPT,NODE.js,EXPRESS.js,MONGODB 
 
-# Snapshots
+# Snapshots of the main data page
 ![image](https://user-images.githubusercontent.com/44752831/99389986-e93f2a80-28fd-11eb-91be-2548e12ff86b.png)
 
 
