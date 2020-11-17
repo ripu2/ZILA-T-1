@@ -1,12 +1,13 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    min-height: 100vh !important;
+    min-height: 100%;
     display: flex !important;
     flex-direction: column !important;
     text-align: justify;
-    background-color: #e8e8e8 !important;
-}
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png") !important;
+    background-position: center;
+    background-attachment: fixed;
 Footer{
     padding: 3em;
     margin-top: auto !important;

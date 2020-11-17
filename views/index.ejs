@@ -33,9 +33,14 @@
     </nav>
     <div class="container">
         <div class="main">
-            <form enctype="multipart/form-data" action="/upload " method="POST">
-                <div class="file-wrapper">
-                    <input type="file" name="files" >
+            <div class="container" style="text-align: center; margin-top: 10%;">
+                <div class="display-4">
+                    Upload your csv file here
+                </div>
+            </div>
+            <form enctype="multipart/form-data" action="/upload " method="POST">                
+                <div class="file-wrapper">                                        
+                    <input  type="file" name="files" >
                     <button class="btn btn-outline-dark btn-lg" type="submit">Upload</button>
                 </div>
 

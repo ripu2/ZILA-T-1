@@ -2,6 +2,11 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
+const fs = require('fs');
+
+if (!fs.existsSync('./uploads')) {
+  fs.mkdirSync('uploads');
+}
 
 app.set('view engine', 'ejs');
 app.use(express.static(`Public`));

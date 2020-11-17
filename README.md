@@ -13,7 +13,7 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 
-### Make sure to add a 'uploads' folder in root directory in order to see some functionality that has been used to enhnace the user interface
+ 
 
 # Stack used
 

@@ -1,11 +1,14 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    min-height: 100vh !important;
+    min-height: 100%;
     display: flex !important;
     flex-direction: column !important;
     text-align: justify;
-    background-color: #e8e8e8 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png") !important;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 Footer{
     padding: 3em;
@@ -18,13 +21,15 @@ Footer{
     color: wheat;
 }
 .navbar{
-    background-color: #bce6eb;
+    background-color: rgba(0,0,0,0.2);
     color: wheat !important;   
 }
+
 .navbar a {
-    color: #30475e;
+    color: black;
 }
 .file-wrapper{
+    margin-top: -10em !important;
     width: 100%;
     margin: auto;
     height: 100vh;
