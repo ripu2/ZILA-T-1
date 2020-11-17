@@ -15,7 +15,7 @@ app.use(
 const upload = require('./Routes/UploadRoute');
 
 app.use(upload);
-
+require('./models/mongo.js');
 app.listen(3000, () => {
   console.log('server is up');
 });

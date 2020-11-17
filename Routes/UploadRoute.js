@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csvtojson');
 const crypto = require('crypto');
+const User = require('../models/userData');
 const getAllDirFiles = function (dirPath, arrayOfFiles) {
   files = fs.readdirSync(dirPath);
 
@@ -21,7 +22,6 @@ const getAllDirFiles = function (dirPath, arrayOfFiles) {
   return arrayOfFiles;
 };
 const result = getAllDirFiles('D:/Projects/ZILA/uploads').length;
-// console.log(result);
 
 var storage = multer.diskStorage({
   destination: './uploads/',
@@ -39,17 +39,30 @@ router.get('/', async (req, res) => {
   res.render('index');
 });
 
-router.post('/upload', upload.single('files'), (req, res, next) => {
-  csv()
-    .fromFile(`d:/Projects/ZILA/uploads/upload${result + 1}.csv`)
-    .then(jsonObj => {
-      console.log(jsonObj);
-      /**
-       * [
-       * 	{a:"1", b:"2", c:"3"},
-       * 	{a:"4", b:"5". c:"6"}
-       * ]
-       */
+router.post('/upload', upload.single('files'), async (req, res, next) => {
+  const loc = path.join(__dirname, '../uploads');
+  const jsonObj = await csv().fromFile(`${loc}/upload${result + 1}.csv`);
+  const saved = true;
+  var today = new Date();
+  jsonObj.forEach(element => {
+    var obj = new User({
+      name: element.Name,
+      age: today.getFullYear() - Number(element.DOB.substr(6, 4)),
+      salary: element.Salary,
     });
+    try {
+      obj.save();
+      next();
+    } catch (error) {
+      saved = false;
+      console.log(error);
+    }
+  });
+  if (saved) res.redirect('/userData');
+});
+
+router.get('/userData', async (req, res) => {
+  const user = await User.find();
+  res.send(user);
 });
 module.exports = router;
