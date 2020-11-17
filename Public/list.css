@@ -28,7 +28,7 @@ Footer{
     color: wheat;
 }
 .navbar{
-    background-color: #bce6eb;
+    background-color: rgba(0,0,0,0.2);
     color: wheat !important;   
 }
 .navbar a {
