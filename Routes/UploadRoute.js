@@ -49,6 +49,7 @@ router.post('/upload', upload.single('files'), async (req, res, next) => {
       name: element.Name,
       age: today.getFullYear() - Number(element.DOB.substr(6, 4)),
       salary: element.Salary,
+      tax: 0.15 * Number(element.Salary),
     });
     try {
       obj.save();

@@ -40,6 +40,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Age </th>
                     <th scope="col">Salary</th>
+                    <th scope="col">Tax (15% of salary)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -50,7 +51,8 @@
                         <td><%=user.name%></td>
                         <td><%=user.age%></td>
                         <td><%=user.salary%></td>
-                  </tr>
+                        <td><%=user.tax%></td>
+                    </tr>
                   <%counter++%>
                   <% }); %>
                   
