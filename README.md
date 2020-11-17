@@ -1,4 +1,9 @@
 # ZILA WebDevelopment Assuigment Task
+
+## Available Scripts
+
+In the project directory, you can run:
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -18,8 +23,4 @@ HTML,CSS,BOOTSTRAP, JAVSCRIPT,NODE.js,EXPRESS.js,MONGODB
 ![image](https://user-images.githubusercontent.com/44752831/99390559-d7aa5280-28fe-11eb-9973-803cfabb4e9a.png)
 
 
-
-## Available Scripts
-
-In the project directory, you can run:
 
