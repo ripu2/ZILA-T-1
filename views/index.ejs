@@ -34,26 +34,11 @@
     <div class="container">
         <div class="main">
             <form enctype="multipart/form-data" action="/upload " method="POST">
-                <!-- <div class="file-wrapper">
-                    <div class="upload-btn-wrapper">
-                        <button class="btn upload-file ">
-                            <span class="upload-btn">
-                                <i class="cloud icon big font-50 d-block pb-2"></i>
-                                Browse Files
-                            </span>
-                            <span class="upload-select-button-id" id="upload">
-                                Supports CSV files
-                            </span>
-                            <span class="success">
-                                <i class="far fa-check-circle success"></i>
-                            </span>
-                        </button>
-                        <input type="file" name="FileUpload" id="FileUpload">
-                    </div>
+                <div class="file-wrapper">
+                    <input type="file" name="files" >
+                    <button class="btn btn-outline-dark btn-lg" type="submit">Upload</button>
+                </div>
 
-                </div> -->
-                <input type="file" name="files">
-                <button type="submit">Upload</button>
             </form>
         </div>
     </div>
