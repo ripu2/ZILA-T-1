@@ -63,6 +63,9 @@ router.post('/upload', upload.single('files'), async (req, res, next) => {
 
 router.get('/userData', async (req, res) => {
   const user = await User.find();
-  res.send(user);
+  //res.send(user);
+  res.render('list', {
+    Users: user,
+  });
 });
 module.exports = router;
