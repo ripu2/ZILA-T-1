@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 body{
     margin: 0;
     overflow-x: hidden;
@@ -5,9 +6,17 @@ body{
     display: flex !important;
     flex-direction: column !important;
     text-align: justify;
-    background-image: url("https://www.transparenttextures.com/patterns/black-linen.png") !important;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/bush.png") !important;
     background-position: center;
     background-attachment: fixed;
+   
+
+}
+table{
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 2em;
+    font-weight: 400 !important;
+}
 Footer{
     padding: 3em;
     margin-top: auto !important;
@@ -34,5 +43,7 @@ Footer{
     justify-content: center;
 }
 .main{
-    margin-top: 5em;
+    padding: 4em;
+    margin-left: auto;
+    margin-right: auto;
 }
